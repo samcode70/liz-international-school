@@ -1,0 +1,519 @@
+/*==========================
+ACADEMIC BANNER
+===========================*/
+
+.academic-banner{
+    background:linear-gradient(135deg,#4527A0,#5E35B1,#7E57C2);
+    padding:180px 8% 110px;
+    text-align:center;
+}
+
+.academic-banner h1{
+    color:#fff;
+    font-size:58px;
+    margin:25px 0;
+}
+
+.academic-banner p{
+    max-width:760px;
+    margin:auto;
+    color:#ECECEC;
+    line-height:1.9;
+    font-size:18px;
+}
+
+.academic-banner .hero-buttons{
+    justify-content:center;
+    margin-top:45px;
+}
+
+@media(max-width:768px){
+
+.academic-banner{
+    padding:160px 8% 90px;
+}
+
+.academic-banner h1{
+    font-size:42px;
+}
+
+.academic-banner p{
+    font-size:17px;
+}
+
+}
+/*==========================
+ACADEMIC PHILOSOPHY
+===========================*/
+
+.academic-philosophy{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.philosophy-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.philosophy-text h2{
+    color:#4527A0;
+    font-size:42px;
+    margin:20px 0;
+}
+
+.philosophy-text p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+
+.philosophy-image i{
+    font-size:120px;
+    margin-bottom:20px;
+}
+
+.philosophy-image p{
+    font-size:22px;
+}
+
+.philosophy-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.philosophy-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+/*==========================
+OUR SCHOOLS
+===========================*/
+
+.our-schools{
+    padding:100px 8%;
+    background:#F8F8F8;
+}
+
+.our-schools .section-title h2{
+    color:#4527A0;
+}
+
+.our-schools .section-title p{
+    color:#666;
+}
+
+.schools-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.school-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.school-card:hover{
+    transform:translateY(-10px);
+}
+
+.school-icon{
+    width:80px;
+    height:80px;
+    background:#F3EEFF;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.school-icon i{
+    font-size:38px;
+    color:#5E35B1;
+}
+
+.school-card h3{
+    color:#4527A0;
+    margin-bottom:18px;
+}
+
+.school-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.school-card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.school-card ul li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+.school-card ul li i{
+    color:#5E35B1;
+    margin-right:10px;
+}
+
+.school-btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#4527A0;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.school-btn:hover{
+    background:#FFC107;
+    color:#4527A0;
+}
+/*==========================
+CURRICULUM
+===========================*/
+
+.curriculum{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.curriculum .section-title h2{
+    color:#4527A0;
+}
+
+.curriculum .section-title p{
+    color:#666;
+}
+
+.curriculum-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+.curriculum-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    border-top:5px solid #5E35B1;
+    transition:.35s;
+}
+
+.curriculum-card:hover{
+    transform:translateY(-10px);
+}
+
+.curriculum-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.curriculum-header i{
+    font-size:40px;
+    color:#5E35B1;
+}
+
+.curriculum-header h3{
+    color:#4527A0;
+    font-size:28px;
+}
+
+.subject-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.subject-tags span{
+    background:#F3EEFF;
+    color:#4527A0;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.subject-tags span:hover{
+    background:#4527A0;
+    color:#fff;
+}
+/*==========================
+TEACHING & LEARNING
+===========================*/
+
+.teaching{
+    padding:100px 8%;
+    background:#F8F8F8;
+}
+
+.teaching .section-title h2{
+    color:#4527A0;
+}
+
+.teaching .section-title p{
+    color:#666;
+}
+
+.teaching-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.teaching-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.teaching-card:hover{
+    transform:translateY(-10px);
+}
+
+.teaching-icon{
+    width:85px;
+    height:85px;
+    margin:0 auto 25px;
+    background:#F3EEFF;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.teaching-icon i{
+    font-size:40px;
+    color:#5E35B1;
+}
+
+.teaching-card h3{
+    color:#4527A0;
+    margin-bottom:18px;
+}
+
+.teaching-card p{
+    color:#666;
+    line-height:1.8;
+}
+/*==========================
+CO-CURRICULAR ACTIVITIES
+===========================*/
+
+.activities{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.activities .section-title h2{
+    color:#4527A0;
+}
+
+.activities .section-title p{
+    color:#666;
+}
+
+.activities-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.activity-card{
+    background:#F8F8F8;
+    padding:40px 30px;
+    border-radius:20px;
+    transition:.35s;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+}
+
+.activity-card:hover{
+    transform:translateY(-10px);
+    background:#4527A0;
+}
+
+.activity-card i{
+    font-size:50px;
+    color:#5E35B1;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.activity-card h3{
+    color:#4527A0;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.activity-card p{
+    color:#666;
+    line-height:1.8;
+    transition:.3s;
+}
+
+.activity-card:hover i,
+.activity-card:hover h3,
+.activity-card:hover p{
+    color:#fff;
+}
+/*==========================
+LEARNING FACILITIES
+===========================*/
+
+.learning-facilities{
+    padding:100px 8%;
+    background:#F8F8F8;
+}
+
+.learning-facilities .section-title h2{
+    color:#4527A0;
+}
+
+.learning-facilities .section-title p{
+    color:#666;
+}
+
+.facilities-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.facility-box{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.facility-box:hover{
+    transform:translateY(-10px);
+}
+
+.facility-box i{
+    font-size:50px;
+    color:#5E35B1;
+    margin-bottom:20px;
+}
+
+.facility-box h3{
+    color:#4527A0;
+    margin-bottom:15px;
+}
+
+.facility-box p{
+    color:#666;
+    line-height:1.8;
+}
+/*==========================
+ACADEMIC CTA
+===========================*/
+
+.academic-cta{
+    padding:100px 8%;
+    background:linear-gradient(135deg,#4527A0,#5E35B1,#7E57C2);
+}
+
+.academic-cta-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.academic-cta-box h2{
+    color:#fff;
+    font-size:46px;
+    margin:20px 0;
+}
+
+.academic-cta-box p{
+    color:#ECECEC;
+    line-height:1.9;
+    margin-bottom:40px;
+    font-size:17px;
+}
+
+.academic-cta-box .hero-buttons{
+    justify-content:center;
+}
+
+/*==========================
+RESPONSIVE
+===========================*/
+
+@media(max-width:768px){
+
+.philosophy-grid{
+    grid-template-columns:1fr;
+}
+
+.philosophy-image{
+    height:300px;
+}
+
+.philosophy-text h2{
+    font-size:34px;
+}
+
+.schools-grid{
+    grid-template-columns:1fr;
+}
+
+.academic-cta-box h2{
+    font-size:34px;
+}
+
+
+.school-card{
+    padding:35px 25px;
+}
+
+.curriculum-grid{
+    grid-template-columns:1fr;
+}
+
+.curriculum-card{
+    padding:30px;
+}
+
+.curriculum-header h3{
+    font-size:24px;
+}
+
+.teaching-grid{
+    grid-template-columns:1fr;
+}
+
+.activities-grid{
+    grid-template-columns:1fr;
+}
+
+.facilities-grid{
+    grid-template-columns:1fr;
+}
+
+}

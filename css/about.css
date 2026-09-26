@@ -1,0 +1,520 @@
+/*==========================
+PAGE BANNER
+===========================*/
+
+.page-banner{
+    background:linear-gradient(135deg,#4527A0,#5E35B1,#7E57C2);
+    padding:170px 8% 100px;
+    text-align:center;
+    color:#fff;
+}
+
+.page-banner h1{
+    font-size:56px;
+    margin:25px 0;
+}
+
+.page-banner p{
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+    color:#ececec;
+}
+
+/*==========================
+ABOUT STORY
+===========================*/
+
+.about-story{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-text h2{
+    color:#4527A0;
+    font-size:42px;
+    margin:20px 0;
+}
+
+.about-text p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   ABOUT STORY IMAGE
+=========================== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.image-placeholder{
+    width:100%;
+    height:450px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.image-placeholder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+/*==========================
+MISSION | VISION
+===========================*/
+
+.mission-vision{
+    padding:100px 8%;
+    background:#F8F8F8;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.mission-card{
+    background:#fff;
+    padding:40px 35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.mission-card:hover{
+    transform:translateY(-10px);
+}
+
+.mission-icon{
+    width:90px;
+    height:90px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#4527A0,#7E57C2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mission-icon i{
+    font-size:42px;
+    color:#FFC107;
+}
+
+.mission-card h3{
+    color:#4527A0;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.mission-card p{
+    color:#666;
+    line-height:1.9;
+}
+
+.values-list{
+    list-style:none;
+    margin-top:20px;
+    padding:0;
+}
+
+.values-list li{
+    padding:10px 0;
+    color:#555;
+    border-bottom:1px solid #eee;
+}
+
+.values-list li:last-child{
+    border-bottom:none;
+}
+
+/*==========================
+LEADERSHIP
+===========================*/
+
+.leadership{
+    padding:100px 8%;
+    background:#F4F4F4;
+}
+
+.leadership-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.leader-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.leader-card:hover{
+    transform:translateY(-10px);
+}
+
+.leader-image{
+    width:140px;
+    height:140px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#4527A0;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.leader-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
+.leader-card h3{
+    color:#4527A0;
+    margin-bottom:10px;
+}
+
+.leader-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.mission-vision .section-title h2,
+.leadership .section-title h2{
+    color:#2E1A73;
+}
+
+.mission-vision .section-title p,
+.leadership .section-title p{
+    color:#555;
+}
+
+/*==========================
+WHY LIZ
+===========================*/
+
+.why-liz{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.why-liz-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.why-liz-text h2{
+    color:#2E1A73;
+    font-size:42px;
+    margin:20px 0;
+}
+
+.why-liz-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.why-liz-features{
+    display:grid;
+    gap:20px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:20px 25px;
+    background:#F8F8F8;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:all .3s ease;
+}
+
+.feature-item:hover{
+    transform:translateX(10px);
+    background:#EFE7FF;
+}
+
+.feature-item i{
+    color:#4527A0;
+    font-size:24px;
+}
+
+.feature-item span{
+    color:#444;
+    font-weight:500;
+}
+
+/*==========================
+ABOUT CTA
+===========================*/
+
+.about-cta{
+    padding:100px 8%;
+    background:linear-gradient(135deg,#4527A0,#5E35B1,#7E57C2);
+}
+
+.about-cta-content{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-cta-content h2{
+    color:#fff;
+    font-size:46px;
+    margin:20px 0;
+}
+
+.about-cta-content p{
+    color:#ECECEC;
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.cta-outline{
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+.cta-outline:hover{
+    background:#fff;
+    color:#4527A0;
+}
+
+.cta-primary{
+    display:inline-block;
+    background:#FFC107;
+    color:#4527A0;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+.cta-primary:hover{
+    background:#FFD54F;
+    transform:translateY(-3px);
+}
+/*==========================
+OUR JOURNEY
+===========================*/
+
+.timeline{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.timeline-wrapper{
+    position:relative;
+    max-width:850px;
+    margin:auto;
+}
+
+.timeline-wrapper::before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#5E35B1;
+}
+
+.timeline-item{
+    display:flex;
+    gap:35px;
+    position:relative;
+    margin-bottom:45px;
+}
+
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+.timeline-dot{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#FFC107;
+    border:5px solid #5E35B1;
+    flex-shrink:0;
+    z-index:2;
+}
+
+.timeline-content{
+    flex:1;
+    background:#F8F8F8;
+    padding:28px 30px;
+    border-radius:18px;
+    box-shadow:0 12px 25px rgba(0,0,0,.06);
+    transition:all .3s ease;
+}
+
+.timeline-content:hover{
+    transform:translateX(8px);
+}
+
+.timeline-year{
+    display:inline-block;
+    background:#E8DDFF;
+    color:#4527A0;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.timeline-content h3{
+    color:#2E1A73;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.timeline-content p{
+    color:#666;
+    line-height:1.9;
+}
+
+/*==========================
+RESPONSIVE
+===========================*/
+
+@media(max-width:992px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-liz-grid{
+        grid-template-columns:1fr;
+    }
+
+    .mission-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .page-banner{
+        padding:150px 8% 80px;
+    }
+
+    .page-banner h1{
+        font-size:42px;
+    }
+
+    .about-text h2,
+    .why-liz-text h2,
+    .about-cta-content h2{
+        font-size:34px;
+    }
+
+    .mission-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+     .timeline-wrapper::before{
+        left:18px;
+    }
+
+    .timeline-item{
+        gap:20px;
+    }
+
+    .timeline-dot{
+        width:38px;
+        height:38px;
+        border-width:4px;
+    }
+
+    .timeline-content{
+        padding:22px;
+    }
+
+.logo img{
+    width:50px;
+    height:50px;
+}
+
+.logo-text h2{
+    font-size:18px;
+}
+
+.logo-text p{
+    font-size:10px;
+}
+
+}
+
+@media(max-width:576px){
+
+    .image-placeholder{
+        height:320px;
+    }
+
+    .leader-image{
+        width:120px;
+        height:120px;
+    }
+
+    .leader-image i{
+        font-size:65px;
+    }
+
+    .mission-card,
+    .leader-card{
+        padding:30px 25px;
+    }
+}
