@@ -485,23 +485,12 @@ SMALL PHONES
     }
 
     .gallery-grid{
-        grid-template-columns:1fr;
         gap:18px;
     }
 
-    /* Show the full gallery images on small screens */
     .gallery-item,
     .gallery-item.large{
-        grid-column:span 1;
-        height:auto;
-        min-height:0;
-        aspect-ratio:4 / 3;
-    }
-
-    .gallery-item img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
+        height:250px;
     }
 
     .gallery-overlay{
