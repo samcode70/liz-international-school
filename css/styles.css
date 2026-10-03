@@ -722,27 +722,6 @@ margin:auto;
     grid-template-columns:1fr;
 }
 
-
-    .navbar{
-
-        flex-direction:column;
-
-        gap:20px;
-
-        position:relative;
-
-    }
-
-    .nav-links{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        gap:15px;
-
-    }
-
     .hero-left h1{
 
         font-size:42px;
