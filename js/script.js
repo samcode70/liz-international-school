@@ -352,9 +352,9 @@ if (menuToggle && navLinks) {
 
     });
 
-    navLinks.querySelectorAll("a").forEach(link => {
+    navLinks.querySelectorAll("a").forEach(function(link) {
 
-        link.addEventListener("click", function () {
+        link.addEventListener("click", function() {
 
             navLinks.classList.remove("active");
 
