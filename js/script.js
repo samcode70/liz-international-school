@@ -322,3 +322,50 @@ if (contactForm) {
     );
 
 }
+```javascript
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navLinks.classList.contains("active")) {
+
+            icon.classList.remove("bi-list");
+            icon.classList.add("bi-x-lg");
+
+        } else {
+
+            icon.classList.remove("bi-x-lg");
+            icon.classList.add("bi-list");
+
+        }
+
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("bi-x-lg");
+            icon.classList.add("bi-list");
+
+        });
+
+    });
+
+}
+```
