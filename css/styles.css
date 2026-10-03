@@ -2261,12 +2261,12 @@ body{
 }
 ```css
 /* ===========================
-   MOBILE MENU
+   MOBILE HAMBURGER MENU
 =========================== */
 
 .menu-toggle{
     display:none;
-    background:none;
+    background:transparent;
     border:none;
     color:#fff;
     font-size:32px;
@@ -2278,43 +2278,73 @@ body{
     display:none;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     .navbar{
         position:relative;
+        width:100%;
+        padding:12px 5%;
         flex-direction:row;
         justify-content:space-between;
         align-items:center;
-        padding:12px 5%;
         gap:0;
     }
 
     .logo{
         width:auto;
+        display:flex;
+        align-items:center;
         justify-content:flex-start;
+        gap:10px;
     }
+
+    .logo img{
+        width:55px;
+        height:55px;
+    }
+
+    .logo-text h2{
+        font-size:16px;
+    }
+
+    .logo-text p{
+        font-size:9px;
+        letter-spacing:1.5px;
+    }
+
+    /* HAMBURGER */
 
     .menu-toggle{
         display:block;
-        z-index:1002;
+        flex-shrink:0;
+        z-index:1001;
     }
 
+    /* MENU IS COMPLETELY HIDDEN */
+
     .nav-links{
+        display:none;
         position:absolute;
         top:100%;
         left:0;
         width:100%;
+
         background:#4527A0;
 
-        display:none;
         flex-direction:column;
         align-items:center;
 
-        padding:20px 5%;
-        gap:8px;
+        gap:0;
+        padding:15px 6% 20px;
+
+        list-style:none;
 
         box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+        z-index:1000;
     }
+
+    /* MENU OPENS */
 
     .nav-links.active{
         display:flex;
@@ -2325,21 +2355,35 @@ body{
         text-align:center;
     }
 
-    .nav-links a{
+    .nav-links li a{
         display:block;
-        padding:10px;
+        width:100%;
+        padding:11px 10px;
+
+        color:#fff;
+        text-decoration:none;
+
         font-size:15px;
     }
 
-    .nav-links .mobile-apply{
-        display:block;
+    .nav-links li a:hover{
+        color:#FFC107;
+    }
+
+    /* APPLY BUTTON INSIDE MOBILE MENU */
+
+    .mobile-apply{
+        display:block !important;
         margin-top:8px;
     }
 
     .mobile-apply .btn{
         display:inline-block;
+        width:auto;
         padding:10px 25px;
     }
+
+    /* HIDE DESKTOP APPLY BUTTON */
 
     .desktop-apply{
         display:none;
@@ -2347,4 +2391,3 @@ body{
 
 }
 ```
-
