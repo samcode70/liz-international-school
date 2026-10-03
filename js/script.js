@@ -267,62 +267,7 @@ if (typeof emailjs !== "undefined") {
 
 }
 
-if (contactForm) {
 
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-            event.preventDefault();
-
-            const submitButton =
-                contactForm.querySelector(
-                    'button[type="submit"]'
-                );
-
-            submitButton.disabled = true;
-            submitButton.textContent = "Sending...";
-
-            emailjs.sendForm(
-                "service_1hodu1i",
-                "template_clwm7hf",
-                contactForm
-            )
-            .then(function () {
-
-                alert(
-                    "Thank you! Your message has been sent successfully."
-                );
-
-                contactForm.reset();
-
-                submitButton.disabled = false;
-                submitButton.textContent =
-                    "Send Message";
-
-            })
-            .catch(function (error) {
-
-                console.error(
-                    "EmailJS error:",
-                    error
-                );
-
-                alert(
-                    "Sorry, your message could not be sent. Please try again."
-                );
-
-                submitButton.disabled = false;
-                submitButton.textContent =
-                    "Send Message";
-
-            });
-
-        }
-    );
-
-}
-```javascript
 /* =========================
    MOBILE MENU
 ========================= */
@@ -368,4 +313,3 @@ if (menuToggle && navLinks) {
     });
 
 }
-```
