@@ -608,42 +608,31 @@ MOBILE RADIO BUTTON FIX
     }
 
 }
-/* =========================
-   FIX ADMISSION PAGE MOBILE SPACING
-========================= */
+/* FIX ADMISSION PAGE SIDE SPACING */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    .admissions-banner,
-    .admission-overview,
-    .admission-process,
-    .admission-requirements {
+    body:has(.admissions-banner) .admissions-banner,
+    body:has(.admissions-banner) main {
         padding-left: 20px;
         padding-right: 20px;
+        box-sizing: border-box;
     }
 
-    .admission-overview h1,
-    .admission-overview h2,
-    .admission-overview p {
-        max-width: 100%;
+    body:has(.admissions-banner) main h1 {
+        font-size: clamp(30px, 7vw, 40px);
+        line-height: 1.2;
         overflow-wrap: break-word;
     }
 
-    .admission-overview h1 {
-        font-size: clamp(30px, 7vw, 42px);
-        line-height: 1.2;
-    }
-
-    .admission-overview p {
+    body:has(.admissions-banner) main p {
         font-size: 18px;
         line-height: 1.7;
     }
 
-    .admission-overview a,
-    .admission-overview .btn {
+    body:has(.admissions-banner) main img {
         max-width: 100%;
-        box-sizing: border-box;
+        height: auto;
     }
 
 }
-
