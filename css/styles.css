@@ -2369,29 +2369,70 @@ body{
 
 }
 
-/* FIX ADMISSION PAGE SIDE SPACING */
+
+/* =========================
+   ADMISSION OVERVIEW - MOBILE SPACING
+========================= */
 
 @media screen and (max-width: 768px) {
 
-    body:has(.admissions-banner) .admissions-banner,
-    body:has(.admissions-banner) main {
+    .admission-overview {
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
     }
 
-    body:has(.admissions-banner) main h1 {
+    .admission-overview .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .admission-overview .overview-grid {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .admission-overview .overview-text {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .admission-overview .section-badge {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .admission-overview h2 {
         font-size: clamp(30px, 7vw, 40px);
         line-height: 1.2;
         overflow-wrap: break-word;
     }
 
-    body:has(.admissions-banner) main p {
+    .admission-overview p {
         font-size: 18px;
         line-height: 1.7;
+        overflow-wrap: break-word;
     }
 
-    body:has(.admissions-banner) main img {
+    .admission-overview .primary-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .admission-overview .overview-image img {
+        display: block;
         max-width: 100%;
         height: auto;
     }
