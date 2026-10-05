@@ -2238,7 +2238,6 @@ body{
     }
 
 }
-```css
 /* ===========================
    MOBILE HAMBURGER MENU
 =========================== */
@@ -2369,4 +2368,33 @@ body{
     }
 
 }
-```
+
+/* FIX ADMISSION PAGE SIDE SPACING */
+
+@media screen and (max-width: 768px) {
+
+    body:has(.admissions-banner) .admissions-banner,
+    body:has(.admissions-banner) main {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    body:has(.admissions-banner) main h1 {
+        font-size: clamp(30px, 7vw, 40px);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+    }
+
+    body:has(.admissions-banner) main p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    body:has(.admissions-banner) main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
