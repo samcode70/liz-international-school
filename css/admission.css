@@ -668,20 +668,20 @@ MOBILE RADIO BUTTON FIX
 
 }
 
-/* REDUCE VIEW ADMISSION PROCESS BUTTON */
 
-.admission-overview .primary-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 15px;
-    border-radius: 30px;
-}
+/* REDUCE YELLOW ADMISSION BUTTON ON MOBILE */
 
 @media screen and (max-width: 768px) {
-    .admission-overview .primary-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
 
+    .admission-overview .primary-btn {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        padding: 12px 24px;
+        font-size: 15px;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+
+}
 
