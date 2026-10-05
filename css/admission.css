@@ -685,3 +685,50 @@ MOBILE RADIO BUTTON FIX
 
 }
 
+/* =========================
+   ADMISSION OVERVIEW MOBILE FIX
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Center the overview section */
+    .admission-overview .overview-text {
+        text-align: center;
+    }
+
+    /* Center the Admission Overview badge */
+    .admission-overview .section-badge {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Reduce the heading size */
+    .admission-overview .overview-text h2 {
+        font-size: clamp(26px, 6vw, 34px);
+        line-height: 1.25;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Center and improve paragraph readability */
+    .admission-overview .overview-text p {
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    /* Center the yellow button */
+    .admission-overview .primary-btn {
+        display: table;
+        margin: 25px auto 0;
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+}
+
+
